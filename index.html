@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript | Buổi 2-3</title>
+
+    <!-- lin fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- link gg font hind -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- link boostrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- link animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- my css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link active" href="#bt1">Bài 1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#bt2">Bài 2</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#bt3">Bài 3</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#bt4">Bài 4</a>
+    </li>
+  </ul>
+  <div class="container" id="bt1">
+    <!-- Bài 1 -->
+    <h3>Bài tập 1|</h3>
+    <div class="row">
+        <div class="input-group mb-3 col-lg-3">
+        <input id="txtNgay" type="number" class="form-control" placeholder="Nhập ngày">
+        </div>
+        <div class="input-group mb-3 col-lg-3">
+        <input id="txtThang" type="number" class="form-control" placeholder="Nhập tháng">
+        </div>
+        <div class="input-group mb-3 col-lg-3">
+            <input id="txtNam" type="number" class="form-control" placeholder="Nhập năm">
+        </div>
+    </div>
+    <div class="row">
+      <div class="input-group mb-3 col-lg-3">
+        <button id="btnNgayHomQua" type="button" class="btn btn-secondary">Ngày hôm qua</button>
+      </div>
+      <div class="input-group mb-3 col-lg-3">
+        <button id="btnNgayMai" type="button" class="btn btn-secondary">Ngày mai</button>
+      </div>
+    </div>
+    <div class="input-group mb-3 col-lg-6">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-hand-point-right"></i></span>
+      </div>
+      <input id="txtKetqua" type="text" class="form-control" aria-describedby="basic-addon1">
+    </div>
+    <!-- End bài 1 -->
+  </div>
+  <hr>
+  <div class="container" id="bt2">
+    <!-- Bài 2 -->
+    <h3>Bài tập 2|</h3>
+    <div class="row">
+      <div class="input-group mb-3 col-lg-3">
+      <input id="txtMonth" type="number" class="form-control" placeholder="Nhập tháng">
+      </div>
+      <div class="input-group mb-3 col-lg-3">
+          <input id="txtYear" type="number" class="form-control" placeholder="Nhập năm">
+      </div>
+  </div>
+    <div class="input-group mb-3 col-lg-6">
+      <button id="btnTinhNgay" type="button" class="btn btn-secondary">Tính ngày</button>
+    </div>
+    <div class="input-group mb-3 col-lg-6">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-hand-point-right"></i></span>
+      </div>
+      <input id="txtTinhNgay" type="text" class="form-control" aria-describedby="basic-addon1">
+    </div>
+    <!-- End bài 2 -->
+  </div>
+  <hr>
+  <div class="container" id="bt3">
+    <!-- Bài 3 -->
+    <h3>Bài tập 3|</h3>
+    <div class="row">
+        <div class="input-group mb-3 col-lg-3">
+        <input id="txtSo" type="number" class="form-control" placeholder="Nhập số">
+        </div>
+        <div class="input-group mb-3 col-lg-3">
+          <button id="btnDocSo" type="button" class="btn btn-secondary">Đọc số</button>
+        </div>
+    </div>
+    <div class="input-group mb-3 col-lg-6">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-hand-point-right"></i></span>
+      </div>
+      <input id="txtDocSo" type="text" class="form-control" aria-describedby="basic-addon1">
+    </div>
+    <!-- End bài 3 -->
+  </div>
+  <hr>
+  <div class="container" id="bt4">
+    <!-- Bài 4 -->
+    <h3>Bài tập 4|</h3>
+    <div class="mb-3 col-lg-6">
+      Sinh viên 1
+    </div>
+    <div class="row">
+        <div class="input-group mb-3 col-lg-3">
+        <input id="txtTen1" type="text" class="form-control" placeholder="Nhập tên">
+        </div>
+        <div class="input-group mb-3 col-lg-3">
+        <input id="txtX1" type="number" class="form-control" placeholder="Nhập tọa độ x">
+        </div>
+        <div class="input-group mb-3 col-lg-3">
+            <input id="txtY1" type="number" class="form-control" placeholder="Nhập tọa độ y">
+        </div>
+    </div>
+    <div class="mb-3 col-lg-6">
+      Sinh viên 2
+    </div>
+    <div class="row">
+        <div class="input-group mb-3 col-lg-3">
+        <input id="txtTen2" type="text" class="form-control" placeholder="Nhập tên">
+        </div>
+        <div class="input-group mb-3 col-lg-3">
+        <input id="txtX2" type="number" class="form-control" placeholder="Nhập tọa độ x">
+        </div>
+        <div class="input-group mb-3 col-lg-3">
+            <input id="txtY2" type="number" class="form-control" placeholder="Nhập tọa độ y">
+        </div>
+    </div>
+    <div class="mb-3 col-lg-6">
+      Sinh viên 3
+    </div>
+    <div class="row">
+        <div class="input-group mb-3 col-lg-3">
+        <input id="txtTen3" type="text" class="form-control" placeholder="Nhập tên">
+        </div>
+        <div class="input-group mb-3 col-lg-3">
+        <input id="txtX3" type="number" class="form-control" placeholder="Nhập tọa độ x">
+        </div>
+        <div class="input-group mb-3 col-lg-3">
+            <input id="txtY3" type="number" class="form-control" placeholder="Nhập tọa độ y">
+        </div>
+    </div>
+    <div class="mb-3 col-lg-6">
+      Trường học
+    </div>
+    <div class="row">
+        <div class="input-group mb-3 col-lg-3">
+        <input id="txtTruongHoc" type="text" class="form-control" placeholder="Nhập tên">
+        </div>
+        <div class="input-group mb-3 col-lg-3">
+        <input id="txtXt" type="number" class="form-control" placeholder="Nhập tọa độ x">
+        </div>
+        <div class="input-group mb-3 col-lg-3">
+            <input id="txtYt" type="number" class="form-control" placeholder="Nhập tọa độ y">
+        </div>
+    </div>
+    <div class="input-group mb-3 col-lg-6">
+      <button id="btnTim" type="button" class="btn btn-secondary">Tìm</button>
+    </div>
+    <div class="input-group mb-3 col-lg-6">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-hand-point-right"></i></span>
+      </div>
+      <input id="txtTim" type="text" class="form-control" aria-describedby="basic-addon1">
+    </div>
+    <!-- End bài 4 -->
+  </div>
+
+    <!-- link jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <!-- link popper -->
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <!-- link bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   
+    <script src="./js/main.js"></script>
+</body>
+</html>
