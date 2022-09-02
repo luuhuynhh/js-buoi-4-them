@@ -61,7 +61,7 @@ btnNgayMai.onclick = function () {
     var ngay = Number(txtNgay.value);
     var thang = Number(txtThang.value);
     var nam = Number(txtNam.value);
-    // Xử lý: Tính toán ngày hôm qua
+    // Xử lý: Tính toán ngày mai
     ngay++;
     if (ngay > ngayLonNhat(thang, nam)) {
         thang++;
@@ -221,12 +221,11 @@ btnTim.onclick = function () {
     var xt = Number(txtXt.value);
     var yt = Number(txtYt.value);
 
-    console.log(ten1, x1, y1);
-    console.log(ten2, x2, y2);
-    console.log(ten3, x3, y3);
     console.log(truongHoc, xt, yt);
 
     // Xử lý:
+    // Tìm kc từ 3 sv đến trường
+    // Tìm max của 3 kc
     var kc1 = (x1 - xt) ** 2 + (y1 - yt) ** 2;
     var kc2 = (x2 - xt) ** 2 + (y2 - yt) ** 2;
     var kc3 = (x3 - xt) ** 2 + (y3 - yt) ** 2;
